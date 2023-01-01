@@ -10,11 +10,12 @@
 
 body {
     /* width: 100%; */
-    /* margin: .5em; */
+    margin: 0;
     background-color: #111;
     color: #0FD903;
     font-family: 'Agave';
-    min-height: calc(100% - 1em);
+/*     min-height: calc(100% - 1em); */
+    height: 100%;
 
     background: radial-gradient(circle, #111 50%, black 150%);
 }
