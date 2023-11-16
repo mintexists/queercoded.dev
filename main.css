@@ -18,13 +18,17 @@ body {
     height: 100%;
 
     background: radial-gradient(circle, #111 50%, black 150%);
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100%;
+    /* min-height: 100%; */
     /* justify-content: space-around; */
     justify-content: center;
     gap: 1.5em;
@@ -105,7 +109,7 @@ h3>.text {
     filter: drop-shadow(0 0 0.5rem #0ed90395);
 }
 
-a {
+.container a {
     color: #0FD903;
     display: flex;
     white-space: nowrap;
@@ -115,7 +119,7 @@ a {
     transition: filter .5s ease-in-out, transform .5s ease-in-out;
 }
 
-a:hover {
+.container a:hover {
     /* color: #f00; */
     /* fill: #f00; */
     transform: scale(1.05);
@@ -142,4 +146,24 @@ a:hover {
     /* filter: blur(.25em); */
 
     /* position: relatives; */
+}
+
+#qc-webring-footer {
+    display: flex;
+    flex-direction: row;
+    height: 10vmin;
+    justify-content: space-between;
+    padding: 1vmin;
+}
+
+#qc-webring-footer a {
+    transition: transform .5s ease-in-out;
+}
+
+#qc-webring-footer a:hover {
+    transform: scale(1.05);
+}
+
+#qc-webring-footer img {
+    height: 100%;
 }
